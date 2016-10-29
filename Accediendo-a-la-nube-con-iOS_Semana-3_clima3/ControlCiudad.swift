@@ -9,10 +9,18 @@
 import UIKit
 
 class ControlCiudad: UIViewController {
-
+    var codigo = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let urls = "https://query.yahooapis.com/v1/public/yql?format=json&q=SELECT%20*%20FROM%20weather.forecast%20WHERE%20u%20=%20%27c%27%20and%20woeid%20=%20%27"
+        let url: NSURL? = NSURL(string: urls + self.codigo + "%27")
+        let datos: NSData? = NSData(contentsOf: url! as URL)
+        do {
+            let json = try JSONSerialization.jsonObject(with: datos! as Data, options: JSONSerialization.ReadingOptions.mutableLeaves)
+        }
+        catch _ {
+        }
         // Do any additional setup after loading the view.
     }
 

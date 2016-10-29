@@ -90,6 +90,10 @@ class TVC: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let cc = segue.destination
+        let cc = segue.destination as! ControlCiudad
+        let ip = self.tableView.indexPathForSelectedRow
+        
+        cc.codigo = self.ciudades[ip!.row][1]
+        
     }
 }
