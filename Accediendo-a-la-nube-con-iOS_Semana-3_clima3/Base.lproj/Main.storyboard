@@ -49,12 +49,30 @@
                     <view key="view" contentMode="scaleToFill" id="pD2-kq-j4a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btY-bO-b0K">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="NP7-UN-QSE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="btY-bO-b0K" firstAttribute="top" secondItem="aKw-U8-C9K" secondAttribute="bottom" constant="86" id="1OA-q4-i0y"/>
+                            <constraint firstItem="btY-bO-b0K" firstAttribute="centerX" secondItem="pD2-kq-j4a" secondAttribute="centerX" id="E2m-bk-E5n"/>
+                            <constraint firstItem="a40-XE-lHo" firstAttribute="top" secondItem="btY-bO-b0K" secondAttribute="bottom" constant="496" id="eMD-uc-bf1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="temperatura" destination="btY-bO-b0K" id="dES-Ax-A5h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKq-UY-zdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1298" y="77"/>
+            <point key="canvasLocation" x="1296.8" y="76.911544227886068"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nVY-gO-fVP">

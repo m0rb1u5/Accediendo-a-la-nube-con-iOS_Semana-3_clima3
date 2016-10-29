@@ -9,6 +9,7 @@
 import UIKit
 
 class ControlCiudad: UIViewController {
+    @IBOutlet weak var temperatura: UILabel!
     var codigo = ""
     
     override func viewDidLoad() {
@@ -18,6 +19,14 @@ class ControlCiudad: UIViewController {
         let datos: NSData? = NSData(contentsOf: url! as URL)
         do {
             let json = try JSONSerialization.jsonObject(with: datos! as Data, options: JSONSerialization.ReadingOptions.mutableLeaves)
+            let dico1 = json as! NSDictionary
+            let dico2 = dico1["query"] as! NSDictionary
+            let dico3 = dico2["results"] as! NSDictionary
+            let dico4 = dico3["channel"] as! NSDictionary
+            let dico5 = dico4["item"] as! NSDictionary
+            let dico6 = dico5["condition"] as! NSDictionary
+            let temp = dico6["temp"] as! NSString as String
+            self.temperatura.text = temp + " ºC"
         }
         catch _ {
         }
