@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9417C6701DC44281001D747D /* TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9417C66F1DC44281001D747D /* TVC.swift */; };
+		9417C6721DC457D2001D747D /* ControlCiudad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9417C6711DC457D2001D747D /* ControlCiudad.swift */; };
 		945572C41DC4393400091C8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945572C31DC4393400091C8B /* AppDelegate.swift */; };
 		945572C91DC4393400091C8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945572C71DC4393400091C8B /* Main.storyboard */; };
 		945572CB1DC4393500091C8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945572CA1DC4393500091C8B /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		9417C66F1DC44281001D747D /* TVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVC.swift; sourceTree = "<group>"; };
+		9417C6711DC457D2001D747D /* ControlCiudad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCiudad.swift; sourceTree = "<group>"; };
 		945572C01DC4393400091C8B /* Accediendo-a-la-nube-con-iOS_Semana-3_clima3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accediendo-a-la-nube-con-iOS_Semana-3_clima3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		945572C31DC4393400091C8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		945572C81DC4393400091C8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				945572C31DC4393400091C8B /* AppDelegate.swift */,
+				9417C66F1DC44281001D747D /* TVC.swift */,
+				9417C6711DC457D2001D747D /* ControlCiudad.swift */,
 				945572C71DC4393400091C8B /* Main.storyboard */,
 				945572CA1DC4393500091C8B /* Assets.xcassets */,
 				945572CC1DC4393500091C8B /* LaunchScreen.storyboard */,
 				945572CF1DC4393500091C8B /* Info.plist */,
-				9417C66F1DC44281001D747D /* TVC.swift */,
 			);
 			path = "Accediendo-a-la-nube-con-iOS_Semana-3_clima3";
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				945572C41DC4393400091C8B /* AppDelegate.swift in Sources */,
 				9417C6701DC44281001D747D /* TVC.swift in Sources */,
+				9417C6721DC457D2001D747D /* ControlCiudad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

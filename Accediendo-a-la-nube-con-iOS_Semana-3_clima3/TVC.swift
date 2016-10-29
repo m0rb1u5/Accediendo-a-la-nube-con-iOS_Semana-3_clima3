@@ -13,6 +13,8 @@ class TVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Clima de Ciudades"
 
         self.ciudades.append(["Caracas", "395269"])
         self.ciudades.append(["Paris", "615702"])
@@ -24,7 +26,6 @@ class TVC: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -36,21 +37,17 @@ class TVC: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return self.ciudades.count
     }
-
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Celda", for: indexPath)
 
         // Configure the cell...
-
+        cell.textLabel?.text = self.ciudades[indexPath.row][0]
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,14 +84,12 @@ class TVC: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let cc = segue.destination
     }
-    */
-
 }
